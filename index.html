@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>My Todos</h1>
+        <div class="input-container">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="What's the task title?">
+            <label for="description">Description:</label>
+            <input type="text" id="description" placeholder="What's the task description?">
+            <button id="add-btn">Add</button>
+        </div>
+        <hr>
+        <div class="tab-container">
+            <button id="todo-tab" class="active">Todo</button>
+            <button id="completed-tab">Completed</button>
+        </div>
+        <ul id="todo-list" class="task-list">
+            <!-- Tasks will be added here -->
+        </ul>
+        <ul id="completed-list" class="task-list" style="display:none;">
+            <!-- Completed tasks will be added here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
